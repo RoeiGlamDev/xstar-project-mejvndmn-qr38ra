@@ -1,0 +1,58 @@
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  body {
+    margin: 0;
+    font-family: 'Arial', sans-serif; // Using a clean sans-serif font
+    background-color: #ffffff; // White background for cleanliness
+    color: #4B0082; // Dark purple text for contrast
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #4B0082; // Purple headers
+    margin: 0;
+  }
+
+  p {
+    line-height: 1.6; // Improved readability
+  }
+
+  a {
+    color: #4B0082; // Purple links
+    text-decoration: none; // No underline
+  }
+
+  a:hover {
+    text-decoration: underline; // Underline on hover for clarity
+  }
+
+  .container {
+    max-width: 1200px; // Max width for content
+    margin: 0 auto; // Centering the container
+    padding: 0 20px; // Padding for inner spacing
+  }
+
+  .review {
+    background-color: #f3f3f3; // Light grey for review cards
+    border-radius: 8px; // Rounded corners
+    padding: 20px; // Padding inside review cards
+    margin: 20px 0; // Margin between reviews
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+  }
+
+  .button {
+    background-color: #4B0082; // Purple button
+    color: #ffffff; // White text on button
+    border: none; // No border
+    border-radius: 5px; // Rounded button corners
+    padding: 10px 20px; // Button padding
+    cursor: pointer; // Pointer on hover
+    transition: background-color 0.3s; // Smooth transition for hover
+  }
+
+  .button:hover {
+    background-color: #6A0DAD; // Lighter purple on hover
+  }
+`;
+
+export default GlobalStyle;
